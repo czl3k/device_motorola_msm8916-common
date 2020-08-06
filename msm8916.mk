@@ -169,10 +169,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.msm8916
 
-# LineageActions
-PRODUCT_PACKAGES += \
-    LineageActions
-
 # Media
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -277,4 +273,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 $(call inherit-product-if-exists, vendor/motorola/msm8916-common/msm8916-common-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, build/target/product/full.mk)
