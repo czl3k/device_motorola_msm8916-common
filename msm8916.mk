@@ -13,7 +13,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
+
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -216,8 +216,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-common \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Seccomp
 PRODUCT_COPY_FILES += \
